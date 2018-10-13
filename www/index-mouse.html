@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <script Language="Javascript">
+        var xmlhttp;
+        xmlhttp=new XMLHttpRequest();
+        
+        function forward()
+        {
+            xmlhttp.open("GET","cgi-bin/forward.cgi",true);
+            xmlhttp.send();
+        }
+        function left()
+        {
+            xmlhttp.open("GET","cgi-bin/left.cgi",true);
+            xmlhttp.send();
+        }
+        function right()
+        {
+            xmlhttp.open("GET","cgi-bin/right.cgi",true);
+            xmlhttp.send();
+        }
+        function reverse()
+        {
+            xmlhttp.open("GET","cgi-bin/reverse.cgi",true);
+            xmlhttp.send();
+        }
+        function stop(event)
+        {
+            xmlhttp.open("GET","cgi-bin/stop.cgi",true);
+            xmlhttp.send();
+        }
+        function lighton()
+        {
+            xmlhttp.open("GET","cgi-bin/lighton.cgi",true);
+            xmlhttp.send();
+        }
+        function lightoff()
+        {
+            xmlhttp.open("GET","cgi-bin/lightoff.cgi",true);
+            xmlhttp.send();
+        }
+        function a145()
+        {
+            xmlhttp.open("GET","cgi-bin/145.cgi",true);
+            xmlhttp.send();
+        }
+        function a115()
+        {
+            xmlhttp.open("GET","cgi-bin/115.cgi",true);
+            xmlhttp.send();
+        }
+        function a85()
+        {
+            xmlhttp.open("GET","cgi-bin/85.cgi",true);
+            xmlhttp.send();
+        }
+        function a60()
+        {
+            xmlhttp.open("GET","cgi-bin/60.cgi",true);
+            xmlhttp.send();
+        }
+        function a50()
+        {
+            xmlhttp.open("GET","cgi-bin/50.cgi",true);
+            xmlhttp.send();
+        }
+        function leftpan()
+        {
+            xmlhttp.open("GET","cgi-bin/leftpan.cgi",true);
+            xmlhttp.send();
+        }
+        function centerpan()
+        {
+            xmlhttp.open("GET","cgi-bin/centerpan.cgi",true);
+            xmlhttp.send();
+        }
+        function rightpan()
+        {
+            xmlhttp.open("GET","cgi-bin/rightpan.cgi",true);
+            xmlhttp.send();
+        }
+        
+        </script>
+    </head>
+    <style>
+        body {background-color:#1B2631}
+        h1 {color:blue}
+        img {width:3%}
+        .border {
+            border-color:#ff0000;
+            overflow: hidden;
+            border-style: solid;
+        }
+        h2{
+            color: blue;
+        }
+    button {
+        color: blue;
+        background:grey;
+        border: none;
+        font-size:100%;
+    }
+        iframe {
+  border: .1em solid red;
+}
+    div {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-touch-callout: none;
+        touch-callout: none;
+    }
+    </style>
+    <body>
+        <div style="text-align:center; ">
+            <center><span style="display:inline-block;padding:5px;border:2px solid #f00; font-size: 140%;font-weight: bold; background-color:floralwhite;">
+                <h2>Mouse Control</h2>
+            </span>
+                </center>
+            <br><br>
+            <iframe src="http://YOUR-IP:9000/javascript_simple.html" frameborder="1" color="black"  align="middle" width="640" height="480" align="middle" scrolling="no"></iframe>
+            <br><br>
+            <img src="forward.png" id="t" onmousedown="forward()" onmouseup="stop(event)">
+            <br>
+            <img src="left.png" id="l" onmousedown="left()" onmouseup="stop(event)">
+            <img vspace="10" hspace="20" src="stop.png" id="s" onmousedown="stop(event)" onmouseup="stop(event)">
+            <img src="right.png" id="r" onmousedown="right()" onmouseup="stop(event)">
+            <br>
+            <img src="reverse.png" id="re" onmousedown="reverse()" onmouseup="stop()">
+            <br><br><br>
+            <!--<img src="lighton.png" id="lion" onclick="lighton()">
+            <img hspace="20" style="padding-left: 40px" src="lightoff.png" id="lioff" onclick="lightoff()">-->
+        </div>
+        <br>
+        <div style="text-align: center ";>
+            <span style="display:inline-block;padding:5px;border:2px solid #f00; font-size: 140%;font-weight: bold; background-color:floralwhite">
+                <marquee><h2>Surveillance Bot Using Web Browser</h2></marquee>
+            </span>
+        </div>
+        <br>
+        <!--<a href="index.html">Touch Control</a>-->
+    </body>
+</html>
+
+
+
+
+
+
+
+
